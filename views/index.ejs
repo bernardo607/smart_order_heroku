@@ -379,16 +379,16 @@
                             <div class="text-ok">
                                 ¡Optimizado! Pallet completo x<%=oldData.GL590CJ/48%>
                             </div>
-                            <% } else if (  ((oldData.GL590CJ % 16) == 0)  ){ %>
+                            <% } else if (  ((oldData.GL590CJ % 12) == 0)  ){ %>
                             <div class="text-ok">
-                                ¡Piso completo! x<%=oldData.GL590CJ/16%>
+                                ¡Piso completo! x<%=oldData.GL590CJ/12%>
                             </div>
                             <div class="text-optimizer">
                                 <%=48-(oldData.GL590CJ % 48)%> más para completar pallet
                             </div>
                             <% } else { %>
                             <div class="text-optimizer">
-                                El piso carga 16 baldes, <%=16-(oldData.GL590CJ % 16)%> más para completar piso <br>
+                                El piso carga 12 baldes, <%=12-(oldData.GL590CJ % 12)%> más para completar piso <br>
                                 El pallet carga 48 baldes, <%=48-(oldData.GL590CJ % 48)%> más para completar pallet
                             </div>
                             <% } %>
@@ -457,16 +457,16 @@
                             <div class="text-ok">
                                 ¡Optimizado! Pallet completo x<%=oldData.GL5140CJ/48%>
                             </div>
-                            <% } else if (  ((oldData.GL5140CJ % 16) == 0)  ){ %>
+                            <% } else if (  ((oldData.GL5140CJ % 12) == 0)  ){ %>
                             <div class="text-ok">
-                                ¡Piso completo! x<%=oldData.GL5140CJ/16%>
+                                ¡Piso completo! x<%=oldData.GL5140CJ/12%>
                             </div>
                             <div class="text-optimizer">
                                 <%=48-(oldData.GL5140CJ % 48)%> más para completar pallet
                             </div>
                             <% } else { %>
                             <div class="text-optimizer">
-                                El piso carga 16 baldes, <%=16-(oldData.GL5140CJ % 16)%> más para completar piso <br>
+                                El piso carga 12 baldes, <%=12-(oldData.GL5140CJ % 12)%> más para completar piso <br>
                                 El pallet carga 48 baldes, <%=48-(oldData.GL5140CJ % 48)%> más para completar pallet
                             </div>
                             <% } %>
@@ -555,36 +555,28 @@
                         <h3>GRASA COTTON-PICKER</h3>
                         <!--GRASA COTTON-PICKER-->
                         <div class="product">
-                            <label for='cottonBD' class="label"><%= products[14].JDcode %> -
-                                <%= products[14].pack %></label><br>
-                            <input type="number" name='cottonBD' id='cottonBD'
-                                class="form-control<%= locals.errors && errors.cottonBD ? '-is-invalid' : null %> "
-                                value="<%= oldData.cottonBD ? oldData.cottonBD : 0 %>" style="font-size:1em;">
+                            <label for='cottonTB' class="label"><%= products[7].JDcode %> -
+                                <%= products[7].pack %></label><br>
+                            <input type="number" name='cottonTB' id='cottonTB'
+                                class="form-control<%= locals.errors && errors.cottonTB ? '-is-invalid' : null %> "
+                                value="<%= oldData.cottonTB ? oldData.cottonTB : 0 %>" style="font-size:1em;">
 
-                            <% if (locals.errors && errors.cottonBD) { %>
+                            <% if (locals.errors && errors.cottonTB) { %>
                             <div class="text-danger">
-                                <%= errors.cottonBD.msg %>
+                                <%= errors.cottonTB.msg %>
                             </div>
                             <% } %>
 
+                            <% if (oldData && oldData.cottonTB && !errors.cottonTB && (oldData.cottonTB != 0)) { %>
 
-                            <% if (oldData && oldData.cottonBD && !errors.cottonBD && (oldData.cottonBD != 0)) { %>
-
-                            <% if ( (oldData.cottonBD % 48) == 0 ) { %>
+                            <% if ( (oldData.cottonTB % 4) == 0 ) { %>
                             <div class="text-ok">
-                                ¡Optimizado! Pallet completo x<%=oldData.cottonBD/48%>
-                            </div>
-                            <% } else if (  ((oldData.cottonBD % 16) == 0)  ){ %>
-                            <div class="text-ok">
-                                ¡Piso completo! x<%=oldData.cottonBD/16%>
-                            </div>
-                            <div class="text-optimizer">
-                                <%=48-(oldData.cottonBD % 48)%> más para completar pallet
+                                ¡Optimizado! Pallet completo x<%=oldData.cottonTB/4%>
                             </div>
                             <% } else { %>
                             <div class="text-optimizer">
-                                El piso carga 16 baldes, <%=16-(oldData.cottonBD % 16)%> más para completar piso <br>
-                                El pallet carga 48 baldes, <%=48-(oldData.cottonBD % 48)%> más para completar pallet
+                                El pallet carga 4 tambores, <%=4-(oldData.cottonTB ? (oldData.cottonTB%4) : 0)%> más
+                                para completarlo.
                             </div>
                             <% } %>
                             <% } %>
