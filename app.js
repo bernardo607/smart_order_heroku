@@ -30,4 +30,6 @@ app.use('/', mainRoutes)
 
 
 // Listen on port 3000
-app.listen(port, () => console.info(`Listening on port ${port}`))
+//app.listen(port, () => console.info(`Listening on port ${port}`))
+app.listen(process.env.PORT || 3000,function () {
+    console.log('Servidor corriendo en puerto 3000')})
