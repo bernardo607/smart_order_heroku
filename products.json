@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "Rcode": "L61773",
+        "JDcode": "AJM2025",
+        "name": "JD Plus 50 II",
+        "pack": "4x4L",
+        "liters": 16,
+        "order": 0
+    },
+    {
+        "id": 2,
+        "Rcode": "L61347",
+        "JDcode": "AJM2026",
+        "name": "JD Plus 50 II",
+        "pack": "20L",
+        "liters": 20,
+        "order": 0
+    },
+    {
+        "id": 3,
+        "Rcode": "L72491",
+        "JDcode": "AJM2027",
+        "name": "JD Plus 50 II",
+        "pack": "209L",
+        "liters": 209,
+        "order": 0
+    },
+    {
+        "id": 4,
+        "Rcode": "L62103",
+        "JDcode": "AJM6354",
+        "name": "JD Hy-Gard",
+        "pack": "4x4L",
+        "liters": 16,
+        "order": 0
+    },
+    {
+        "id": 5,
+        "Rcode": "L16287",
+        "JDcode": "AJM69444",
+        "name": "JD Hy-Gard",
+        "pack": "20L",
+        "liters": 20,
+        "order": 0
+    },
+    {
+        "id": 6,
+        "Rcode": "L33551",
+        "JDcode": "AJM69445",
+        "name": "JD Hy-Gard",
+        "pack": "209L",
+        "liters": 209,
+        "order": 0
+    },
+    {
+        "id": 7,
+        "Rcode": "L61367",
+        "JDcode": "AJM2028",
+        "name": "JD Torq Gard II",
+        "pack": "20L",
+        "liters": 20,
+        "order": 0
+    },
+    {
+        "id": 8,
+        "Rcode": "L72521",
+        "JDcode": "AJM2029",
+        "name": "JD Torq Gard II",
+        "pack": "209L",
+        "liters": 209,
+        "order": 0
+    },
+    {
+        "id": 9,
+        "Rcode": "L62123",
+        "JDcode": "AJM6382",
+        "name": "JD GL-5 80W-90",
+        "pack": "4x4L",
+        "liters": 16,
+        "order": 0
+    },
+    {
+        "id": 10,
+        "Rcode": "L25407",
+        "JDcode": "AJM6252",
+        "name": "JD GL-5 80W-90",
+        "pack": "20L",
+        "liters": 20,
+        "order": 0
+    },
+    {
+        "id": 11,
+        "Rcode": "L62133",
+        "JDcode": "AJM6385",
+        "name": "JD GL-5 85W-140",
+        "pack": "4x4L",
+        "liters": 16,
+        "order": 0
+    },
+    {
+        "id": 12,
+        "Rcode": "L22957",
+        "JDcode": "AJM6256",
+        "name": "JD GL-5 85W-140",
+        "pack": "20L",
+        "liters": 20,
+        "order": 0
+    },
+    {
+        "id": 13,
+        "Rcode": "L61517",
+        "JDcode": "AJM59056",
+        "name": "JD Break-In Oil",
+        "pack": "20L",
+        "liters": 20,
+        "order": 0
+    },
+    {
+        "id": 14,
+        "Rcode": "L25987",
+        "JDcode": "AJM575",
+        "name": "JD Grasa multiuso de litio",
+        "pack": "18kg",
+        "liters": 20,
+        "order": 0
+    },
+    {
+        "id": 15,
+        "Rcode": "L38161",
+        "JDcode": "AJM31361",
+        "name": "JD Grasa Cotton Picker",
+        "pack": "180kg",
+        "liters": 209,
+        "order": 0
+    }
+]

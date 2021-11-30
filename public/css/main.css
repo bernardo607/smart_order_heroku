@@ -1,0 +1,152 @@
+* {
+    font-family: 'Roboto', sans-serif;
+} 
+
+.header{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header:hover{
+    background-color:rgb(30, 30, 30);
+}
+
+.header-title  {
+    color: ghostwhite;
+    font-size: 30px;
+    margin: left;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.header-text-mobile {
+    color: lightgray;
+    font-size: 20px;
+    font-weight: lighter;
+    margin: auto;
+    padding: 5px;
+}
+
+.header-text-desktop {
+    color: lightgray;
+    font-size: 20px;
+    font-weight: lighter;
+    margin: auto;
+    padding: 5px;
+    display: none;
+}
+
+.productList {
+    display: block;
+    max-width: 500px;
+    margin:auto;
+}
+
+.productFamily {
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: block;
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;
+    z-index: 1;
+    box-shadow: 0 2px 40px DimGray;
+}
+.productFamily:hover{
+    background-color: rgb(243, 243, 243);
+    border: 1px solid rgba(240, 240, 240, 0.5);   
+}
+
+.productFamily h3{
+    font-weight: bold;
+    color: orangered;
+    margin: auto;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.productFamily h3:hover{
+    font-size: 19px;
+}
+
+.product{
+ 
+ margin-bottom: 10px;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
+    
+}
+
+.label{
+    margin: auto;
+    margin-left: 0px;
+}
+
+.form-control {
+    border: 1px solid green;
+    border-radius: 5px;
+}
+
+.form-control-is-invalid{
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.text-danger {
+    color: red;
+    font-weight: lighter;
+    font-size: small;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.text-ok {
+    color: green;
+    font-weight: lighter;
+    font-size: small;
+    margin-bottom: 10px;
+    justify-content: left;
+    width: 100%;
+}
+
+.text-optimizer{
+    color: orange;
+    font-weight: lighter;
+    font-size: small;
+    margin-bottom: 10px;
+    justify-content: left;
+    width: 100%;
+}
+
+
+
+
+@media(min-width: 550px){
+    .header-text-desktop{
+        display: flex;
+        width: 100% ;
+        justify-content: center;
+    }
+    .productList {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: none;
+    }
+
+    .productFamily {
+        width: 45%;
+        
+    }
+    
+    .form{
+        display: flex;
+    }
+
+
+}
