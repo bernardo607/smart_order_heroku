@@ -62,16 +62,16 @@
                             <div class="text-ok">
                                 ¡Optimizado! Pallet completo x<%=oldData.plus50CJ/48%>
                             </div>
-                            <% } else if (  ((oldData.plus50CJ % 16) == 0)  ){ %>
+                            <% } else if (  ((oldData.plus50CJ % 12) == 0)  ){ %>
                             <div class="text-ok">
-                                ¡Piso completo! x<%=oldData.plus50CJ/16%>
+                                ¡Piso completo! x<%=oldData.plus50CJ/12%>
                             </div>
                             <div class="text-optimizer">
                                 <%=48-(oldData.plus50CJ % 48)%> más para completar pallet
                             </div>
                             <% } else { %>
                             <div class="text-optimizer">
-                                El piso carga 16 baldes, <%=16-(oldData.plus50CJ % 16)%> más para completar piso <br>
+                                El piso carga 12 baldes, <%=12-(oldData.plus50CJ % 12)%> más para completar piso <br>
                                 El pallet carga 48 baldes, <%=48-(oldData.plus50CJ % 48)%> más para completar pallet
                             </div>
                             <% } %>
@@ -164,7 +164,7 @@
                             <div class="text-ok">
                                 ¡Optimizado! Pallet completo x<%=oldData.hygardCJ/48%>
                             </div>
-                            <% } else if (  ((oldData.hygardCJ % 16) == 0)  ){ %>
+                            <% } else if (  ((oldData.hygardCJ % 12) == 0)  ){ %>
                             <div class="text-ok">
                                 ¡Piso completo! x<%=oldData.hygardCJ/16%>
                             </div>
@@ -173,7 +173,7 @@
                             </div>
                             <% } else { %>
                             <div class="text-optimizer">
-                                El piso carga 16 cajas, <%=16-(oldData.hygardCJ % 16)%> más para completar piso <br>
+                                El piso carga 12 cajas, <%=12-(oldData.hygardCJ % 12)%> más para completar piso <br>
                                 El pallet carga 48 cajas, <%=48-(oldData.hygardCJ % 48)%> más para completar pallet
                             </div>
                             <% } %>
@@ -592,7 +592,6 @@
                     </div>
                 </div>
                 <br>
-
                 <button type="submit" class="button">MODIFICAR</button>
             </form>
         </div>
